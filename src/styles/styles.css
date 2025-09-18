@@ -1,0 +1,15 @@
+.content {
+    max-width: 93.75rem;
+}
+
+@media screen and (min-width: 1279px) {
+    .content {
+        max-width: none;
+    }
+}
+.logo {
+    display: block;
+}
+.header__logo {
+    margin-right: 15px;
+}
