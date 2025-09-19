@@ -82,69 +82,69 @@ const TradingStats = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen flex items-center py-8">
-      <div className="max-w-7xl ml-10 flex flex-col md:flex-row items-center w-full">
+      <div className="w-full ml-10 flex flex-col md:flex-row items-start">
         {/* Left Content - 40% */}
-        <div className="w-full md:w-2/5 space-y-12">
-          <h1 className="text-4xl font-bold text-gray-800 leading-snug tracking-tight">
-            Place your trades on best conditions
+        <div className="w-full md:w-2/5 space-y-16">
+          <h1 className="text-5xl font-bold text-gray-600 leading-tight tracking-tight mt-6">
+            Place your trades on best <br/>conditions
           </h1>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-10">
             {/* Row 1 */}
             <div>
-              <div className="text-5xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-blue-500">
                 {formatNumber(animatedValues.minInvestment, "$")}
                 <span className="text-blue-500">*</span>
               </div>
-              <div className="text-lg text-gray-600 font-medium">
+              <div className="text-xl text-gray-600 font-medium mt-2">
                 Minimum investment amount
               </div>
             </div>
 
             <div>
-              <div className="text-5xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-blue-500">
                 {formatNumber(animatedValues.minTrade, "$")}
               </div>
-              <div className="text-lg text-gray-600 font-medium">
+              <div className="text-xl text-gray-600 font-medium mt-2">
                 Minimum trade amount
               </div>
             </div>
 
             {/* Row 2 */}
             <div>
-              <div className="text-5xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-blue-500">
                 {formatNumber(animatedValues.demoMoney, "$")}
               </div>
-              <div className="text-lg text-gray-600 font-medium">
+              <div className="text-xl text-gray-600 font-medium mt-2">
                 Virtual money on your Demo account
               </div>
             </div>
 
             <div>
-              <div className="text-5xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-blue-500">
                 {formatNumber(animatedValues.paymentMethods, "", "+")}
               </div>
-              <div className="text-lg text-gray-600 font-medium">
+              <div className="text-xl text-gray-600 font-medium mt-2">
                 Payment methods
               </div>
             </div>
 
             {/* Row 3 */}
             <div>
-              <div className="text-5xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-blue-500">
                 {formatNumber(animatedValues.commission, "$")}
               </div>
-              <div className="text-lg text-gray-600 font-medium">
+              <div className="text-xl text-gray-600 font-medium mt-2">
                 No commission on deposit and withdrawal
               </div>
             </div>
 
             <div>
-              <div className="text-5xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-blue-500">
                 {formatNumber(animatedValues.assets, "", "+")}
               </div>
-              <div className="text-lg text-gray-600 font-medium">
+              <div className="text-xl text-gray-600 font-medium mt-2">
                 Assets for trading
               </div>
             </div>
@@ -152,7 +152,7 @@ const TradingStats = () => {
         </div>
 
         {/* Right Content - 60% */}
-        <div className="w-full md:w-3/5 flex justify-center mt-10 md:mt-0">
+        <div className="w-full md:w-3/5 flex justify-center mt-12 md:mt-24">
           <img
             src={Monitor}
             alt="Trading Monitor"

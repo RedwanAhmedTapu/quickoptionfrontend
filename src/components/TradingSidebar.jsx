@@ -1,96 +1,233 @@
-import { 
-  User, 
-  CreditCard, 
-  ArrowUpDown, 
-  Bell, 
-  MessageCircle, 
-  Newspaper, 
-  Settings, 
-  LogOut,
-  Wallet
-} from "lucide-react";
+import React, { useState } from "react";
 
-export default function TradingSidebar() {
-  return (
-    <div className="fixed right-0 top-0 z-50 h-screen w-72  bg-[#001e3c] text-white shadow-2xl">
-      {/* Header Section */}
-      <div className="p-6 border-b border-blue-700/50">
-        <div className="flex items-center space-x-4 mb-6">
-          <div className="relative">
-            <div className="w-16 h-16 relative">
-              {/* SVG Border */}
-              <svg className="absolute inset-0 w-full h-full text-green-500" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g className="profile-level__icon-group profile-level__icon-group--notify">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M183.004 139.728C188.77 127.702 192 114.228 192 100C192 85.7719 188.77 72.2981 183.004 60.2719C185.409 58.9928 187.632 57.4157 189.622 55.5899C196.265 68.9698 200 84.0488 200 100C200 115.951 196.265 131.03 189.622 144.41C187.632 142.584 185.409 141.007 183.004 139.728ZM139.728 183.004C127.702 188.77 114.228 192 100 192C49.1898 192 8 150.81 8 100C8 49.1898 49.1898 8 100 8C114.228 8 127.702 11.2299 139.728 16.9964C141.007 14.5911 142.584 12.3685 144.41 10.3776C131.03 3.73478 115.951 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200C115.951 200 131.03 196.265 144.41 189.622C142.584 187.632 141.007 185.409 139.728 183.004Z" fill="currentColor" />
-                </g>
-                <g className="profile-level__icon-group profile-level__icon-group--status">
-                  <path d="M192 100C192 150.81 150.81 192 100 192C49.1898 192 8 150.81 8 100C8 49.1898 49.1898 8 100 8C114.228 8 127.702 11.2299 139.728 16.9964C141.007 14.5911 142.584 12.3685 144.41 10.3776C131.03 3.73478 115.951 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200C155.228 200 200 155.228 200 100C200 84.0488 196.265 68.9698 189.622 55.5899C187.632 57.4157 185.409 58.9928 183.004 60.2719C188.77 72.2981 192 85.7719 192 100Z" fill="currentColor" />
-                </g>
-              </svg>
-              
-              {/* Avatar */}
-              <div className="absolute inset-2 bg-gray-600 rounded-full flex items-center justify-center">
-                <User className="w-6 h-6 text-gray-300" />
-              </div>
-            </div>
-            <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-              <ArrowUpDown className="w-3 h-3 text-white" />
-            </div>
-          </div>
-          <div>
-            <h2 className="text-lg font-semibold text-white">Unknown client</h2>
-            <p className="text-sm text-blue-200">id 111604275</p>
-            <p className="text-sm text-blue-200">redwa_@gmail.com</p>
-          </div>
-        </div>
+const TradingSidebar = () => {
+  const [activeTab, setActiveTab] = useState("login");
+  const [loginData, setLoginData] = useState({
+    email: "",
+    password: "",
+    rememberMe: false,
+  });
+  const [registerData, setRegisterData] = useState({
+    email: "",
+    password: "",
+    promoCode: "",
+    agreeToTerms: false,
+  });
 
-        {/* Balance Card */}
-        <div className="bg-blue-800/50 rounded-lg p-4 mb-4 border border-blue-600/30">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center">
-              <Wallet className="w-5 h-5 text-blue-200" />
-            </div>
-            <div className="text-2xl font-bold text-white">0₸</div>
-          </div>
-        </div>
+  const handleLoginChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setLoginData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
-        {/* Action Buttons */}
-        <div className="flex space-x-3">
-          <button className="flex-1 bg-white text-blue-900 font-semibold py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors">
-            DEPOSIT
-          </button>
-          <button className="flex-1 bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-blue-500 transition-colors">
-            TRADE NOW
-          </button>
-        </div>
-      </div>
+  const handleRegisterChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setRegisterData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
-      {/* Navigation Menu */}
-      <nav className="flex-1 py-4">
-        <div className="space-y-1">
-          <NavItem icon={<User className="w-5 h-5" />} text="Profile" />
-          <NavItem icon={<CreditCard className="w-5 h-5" />} text="Deposit" />
-          <NavItem icon={<CreditCard className="w-5 h-5" />} text="Withdrawal" />
-          <NavItem icon={<Bell className="w-5 h-5" />} text="Notifications" />
-          <NavItem icon={<MessageCircle className="w-5 h-5" />} text="Support" />
-          <NavItem icon={<Newspaper className="w-5 h-5" />} text="News" />
-          <NavItem icon={<Settings className="w-5 h-5" />} text="Settings" />
-        </div>
-        
-        {/* Logout at bottom */}
-        <div className="absolute bottom-6 left-0 right-0 px-4">
-          <NavItem icon={<LogOut className="w-5 h-5" />} text="Logout" />
-        </div>
-      </nav>
+  const handleLoginSubmit = (e) => {
+    e.preventDefault();
+    console.log("Login data:", loginData);
+  };
+
+  const handleRegisterSubmit = (e) => {
+    e.preventDefault();
+    console.log("Register data:", registerData);
+  };
+
+  // Floating input component
+  const FloatingInput = ({
+    label,
+    type,
+    name,
+    value,
+    onChange,
+    required = false,
+  }) => (
+    <div className="relative w-full">
+      <input
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        required={required}
+        placeholder=" "
+        className="peer w-full border-b border-slate-500 bg-transparent text-white px-1 pt-5 pb-2 outline-none 
+                   focus:border-blue-500 transition-all duration-300"
+      />
+      <label
+        className="absolute left-1 top-2 text-slate-400 text-sm transition-all duration-300 
+                   peer-placeholder-shown:top-5 peer-placeholder-shown:text-slate-500 peer-placeholder-shown:text-base
+                   peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-400"
+      >
+        {label}
+      </label>
     </div>
   );
-}
 
-function NavItem({ icon, text }) {
+  // Google Button
+ const GoogleButton = () => (
+  <button
+    type="button"
+    className="w-full py-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 font-medium flex items-center justify-center gap-2 transition-colors"
+  >
+    {/* Official multicolor Google G */}
+    <svg className="w-5 h-5" viewBox="0 0 533.5 544.3">
+      <path fill="#4285F4" d="M533.5 278.4c0-17.4-1.5-34.1-4.3-50.4H272v95.3h146.9c-6.3 34-25 62.9-53.3 82.2v68h85.9c50.3-46.4 81-114.9 81-195.1z"/>
+      <path fill="#34A853" d="M272 544.3c72.6 0 133.4-24 177.9-65.4l-85.9-68c-23.9 16-54.6 25.5-92 25.5-70.7 0-130.6-47.7-152.1-111.8H28.2v70.3c44.9 88.4 137.5 149.4 243.8 149.4z"/>
+      <path fill="#FBBC05" d="M119.9 324.6c-11-32.8-11-68.1 0-100.9V153.4H28.2c-37.8 75.6-37.8 161.9 0 237.5l91.7-66.3z"/>
+      <path fill="#EA4335" d="M272 107.7c39.6 0 75.2 13.6 103.3 40.2l77.4-77.4C405.3 24 344.6 0 272 0 165.7 0 73.1 61 28.2 149.4l91.7 70.3C141.4 155.4 201.3 107.7 272 107.7z"/>
+    </svg>
+    <span>Continue with Google</span>
+  </button>
+);
+
+
   return (
-    <button className="w-full flex items-center space-x-4 px-6 py-3 text-blue-100 hover:bg-blue-700/30 hover:text-white transition-all duration-200">
-      <span className="text-blue-200">{icon}</span>
-      <span className="font-medium">{text}</span>
-    </button>
+    <div className="fixed h-screen top-0 right-0 bottom-0 w-80 z-50 bg-[#00264a]">
+      {/* Tabs */}
+      <div className="flex">
+        <button
+          className={`flex-1 py-4 font-semibold text-lg transition-colors ${
+            activeTab === "login"
+              ? "text-white bg-[#00264a]"
+              : "text-slate-400 bg-slate-900 hover:bg-slate-800"
+          }`}
+          onClick={() => setActiveTab("login")}
+        >
+          Log In
+        </button>
+        <button
+          className={`flex-1 py-4 font-semibold text-lg transition-colors ${
+            activeTab === "register"
+              ? "text-white bg-[#00264a]"
+              : "text-slate-400 bg-slate-900 hover:bg-slate-800"
+          }`}
+          onClick={() => setActiveTab("register")}
+        >
+          Registration
+        </button>
+      </div>
+
+      {/* Forms */}
+      <div className="p-8 space-y-6">
+        {activeTab === "login" && (
+          <form className="space-y-6" onSubmit={handleLoginSubmit}>
+            <FloatingInput
+              label="Email"
+              type="email"
+              name="email"
+              value={loginData.email}
+              onChange={handleLoginChange}
+              required
+            />
+            <FloatingInput
+              label="Password"
+              type="password"
+              name="password"
+              value={loginData.password}
+              onChange={handleLoginChange}
+              required
+            />
+
+            <div className="flex items-center justify-between text-sm text-slate-400">
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  checked={loginData.rememberMe}
+                  onChange={handleLoginChange}
+                  className="w-4 h-4 bg-gray-800 text-blue-500 border-slate-700 rounded focus:ring-blue-500"
+                />
+                Remember me
+              </label>
+             
+            </div>
+
+            <button
+              type="submit"
+              className="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg transition-colors"
+            >
+              LOG IN
+            </button>
+
+            <div className="relative flex items-center py-2">
+              <div className="flex-grow border-t border-slate-700"></div>
+              <span className="flex-shrink mx-4 text-slate-400 text-sm">
+                Or login with
+              </span>
+              <div className="flex-grow border-t border-slate-700"></div>
+            </div>
+
+            <GoogleButton />
+          </form>
+        )}
+
+        {activeTab === "register" && (
+          <form className="space-y-6" onSubmit={handleRegisterSubmit}>
+            <FloatingInput
+              label="Email"
+              type="email"
+              name="email"
+              value={registerData.email}
+              onChange={handleRegisterChange}
+              required
+            />
+            <FloatingInput
+              label="Password"
+              type="password"
+              name="password"
+              value={registerData.password}
+              onChange={handleRegisterChange}
+              required
+            />
+            <FloatingInput
+              label="Promo Code"
+              type="text"
+              name="promoCode"
+              value={registerData.promoCode}
+              onChange={handleRegisterChange}
+            />
+
+            <label className="flex items-start gap-2 text-sm text-slate-400">
+              <input
+                type="checkbox"
+                name="agreeToTerms"
+                checked={registerData.agreeToTerms}
+                onChange={handleRegisterChange}
+                className="w-4 h-4 mt-0.5 text-blue-500 border-slate-700 rounded focus:ring-blue-500"
+                required
+              />
+              I have read and accepted the following agreement: Public offer
+              agreement
+            </label>
+
+            <button
+              type="submit"
+              className="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg transition-colors"
+            >
+              SIGN UP
+            </button>
+
+            <div className="relative flex items-center py-2">
+              <div className="flex-grow border-t border-slate-700"></div>
+              <span className="flex-shrink mx-4 text-slate-400 text-sm">
+                Or sign up with
+              </span>
+              <div className="flex-grow border-t border-slate-700"></div>
+            </div>
+
+            <GoogleButton />
+          </form>
+        )}
+      </div>
+    </div>
   );
-}
+};
+
+export default TradingSidebar;
