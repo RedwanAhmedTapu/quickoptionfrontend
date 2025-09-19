@@ -43,7 +43,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <img src={PocketoptionLogo} className="w-14 h-14" alt="PocketOption Logo" />
           <span className={`text-xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>
-            <span className="text-blue-400">Pocket</span>Option
+            <span className="text-blue-400">Quick</span>Option
           </span>
         </div>
 
