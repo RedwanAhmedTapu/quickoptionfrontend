@@ -38,7 +38,7 @@ const Header = () => {
         : 'bg-transparent text-white'
     }`}>
       {/* Top Header */}
-      <div className="w-full max-w-7xl  flex justify-between items-center px-6 py-4 relative z-50">
+      <div className="w-full max-w-6xl  flex justify-between items-center px-6 py-4 relative z-50">
          {/* Logo */}
         <div className="flex items-center gap-3">
           <img src={PocketoptionLogo} className="w-14 h-14" alt="PocketOption Logo" />
