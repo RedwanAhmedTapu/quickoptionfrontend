@@ -47,7 +47,11 @@ const OffersSlider = () => {
   };
 
   return (
-    <div className="bg-[#0f487c] py-24 px-6 relative overflow-hidden">
+    <div className="bg-[#0f487c] py-24 px-6 relative overflow-hidden"
+    style={{
+        background: "linear-gradient(180deg, #2193b0, #6dd5ed 50%, #2193b0)"
+      }}
+    >
       <div className="max-w-6xl  relative">
         {/* Navigation Arrows */}
         <div className="absolute -top-20 right-0 z-10 flex space-x-2">
@@ -55,13 +59,13 @@ const OffersSlider = () => {
             onClick={prevSlide}
             className="w-12 h-12 flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
           >
-            <ChevronLeft className="w-8 h-8 text-blue-500" />
+            <ChevronLeft className="w-8 h-8 text-white text-bold" />
           </button>
           <button
             onClick={nextSlide}
             className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
           >
-            <ChevronRight className="w-8 h-8 text-blue-500" />
+            <ChevronRight className="w-8 h-8 text-white text-bold" />
           </button>
         </div>
 
@@ -75,11 +79,11 @@ const OffersSlider = () => {
           >
             {slides.map((slide) => (
               <div key={slide.id} className="flex-none w-80 h-auto px-4">
-                <div className="bg-[#04294C] rounded-xl p-6 h-96 flex flex-col items-center justify-between text-center border border-blue-700/40 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 shadow-lg relative overflow-hidden group">
+                <div className="bg-[#0e718c] rounded-xl p-6 h-96 flex flex-col items-center justify-between text-center border border-blue-700/40 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 shadow-lg relative overflow-hidden group">
                   {/* Radial Glow */}
                   <div
-                    className="absolute top-10 w-48 h-48 bg-blue-400/50 rounded-full blur-2xl animate-pulse 
-                                  group-hover:bg-blue-400/80 group-hover:scale-125 group-hover:blur-3xl transition-all duration-500"
+                    className="absolute top-10 w-48 h-48 bg-[#2cccf4]/50 rounded-full blur-2xl animate-pulse 
+                                  group-hover:bg-[#26525e]/80 group-hover:scale-125 group-hover:blur-3xl transition-all duration-500"
                   ></div>
 
                   {/* Icon */}
@@ -97,7 +101,7 @@ const OffersSlider = () => {
                   </h3>
 
                   {/* More Button */}
-                  <button className="px-6 py-2 bg-[#0f487c] text-white font-semibold rounded-lg transition-all duration-300 shadow-md relative z-10 group-hover:bg-[#1a6cb5] group-hover:shadow-lg">
+                  <button className="px-6 py-2 bg-[#19b9c5] text-white font-semibold rounded-lg transition-all duration-300 shadow-md relative z-10 group-hover:bg-[#26eaf8] group-hover:shadow-lg">
                     MORE
                   </button>
                 </div>

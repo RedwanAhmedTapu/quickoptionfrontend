@@ -2,7 +2,7 @@
 import React from "react";
 import { Globe, Menu } from "lucide-react";
 // Import images
-import LaptopImage from "../assets/imgs/header-bg-3_2.avif";
+import LaptopImage from "../assets/imgs/homelaptop.png";
 import MobileImage from "../assets/imgs/header-bg-2.avif";
 import CenterImage from "../assets/imgs/header-bg-1.avif";
 import Star from "../assets/imgs/Star x2.svg";
@@ -10,10 +10,8 @@ import Star from "../assets/imgs/Star x2.svg";
 const HeroSection = () => {
   return (
     <section
-      className="relative top-0 left-0 right-0 text-white min-h-screen flex items-center overflow-hidden"
-      style={{
-        background: "linear-gradient(180deg, #003b72, #00264a 50%, #00264a)",
-      }}
+      className="relative top-0 left-0 right-0 ocean-gradient text-white min-h-screen flex items-center overflow-hidden"
+     
     >
       {/* Mobile Image */}
       <img
@@ -30,15 +28,12 @@ const HeroSection = () => {
       />
 
       {/* Right Laptop Image - Positioned absolutely for better control */}
-      <div className="absolute right-0 top-0 bottom-0 w-1/2 lg:w-3/5 overflow-hidden ">
+      <div className="absolute right-0 top-0 bottom-0 w-1/2 lg:w-3/5 ">
         <img
           src={LaptopImage}
           alt="Laptop trading"
-          className="h-full w-auto object-cover absolute -right-52 top-0 drop-shadow-2xl transform  scale-125  "
-          style={{
-            minWidth: "120%",
-            transformOrigin: "center center",
-          }}
+          className="h-full w-auto object-cover absolute  top-0 drop-shadow-2xl transform    "
+          
         />
       </div>
 
@@ -63,15 +58,15 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col gap-6">
-            <button className="bg-blue-600 w-full sm:w-80 h-12 hover:bg-blue-700 flex justify-center items-center text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors duration-200">
-              REGISTRATION
+            <button className="bg-white text-[#2193b0] w-full sm:w-80 h-14 hover:bg-gray-100 hover:scale-105 flex justify-center items-center px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 shadow-lg border-2 border-white/30">
+              GET STARTED - FREE
             </button>
             <div className="flex flex-col sm:flex-row sm:items-center text-xl gap-2">
-              <a href="#" className="text-white underline transition-colors">
+              <a href="#" className="text-white underline hover:text-blue-100 transition-colors">
                 Log In
               </a>
-              <span className="text-gray-400 hidden sm:inline mx-2">or</span>
-              <a href="#" className="text-white underline transition-colors">
+              <span className="text-blue-100/80 hidden sm:inline mx-2">or</span>
+              <a href="#" className="text-white underline hover:text-blue-100 transition-colors">
                 Start in one click
               </a>
             </div>
@@ -81,7 +76,7 @@ const HeroSection = () => {
           <div className="mt-8 flex items-center gap-3 text-xl font-bold text-white">
             <img src={Star} className="w-8 h-8" alt="Star rating" />
             <span className="text-white font-semibold">4.5 ★</span>
-            <span>on Traders Union</span>
+            <span className="text-blue-100">on Traders Union</span>
           </div>
         </div>
 
