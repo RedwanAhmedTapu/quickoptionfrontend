@@ -48,7 +48,7 @@ const OffersSlider = () => {
 
   return (
     <div className="bg-[#0f487c] py-24 px-6 relative overflow-hidden">
-      <div className="max-w-7xl  relative">
+      <div className="max-w-6xl  relative">
         {/* Navigation Arrows */}
         <div className="absolute -top-20 right-0 z-10 flex space-x-2">
           <button

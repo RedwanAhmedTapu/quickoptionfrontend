@@ -3,7 +3,7 @@ import Gift from "../assets/imgs/gift.png";
 const EmailSection = () => (
   <section className="bg-transparent h-72 -mt-16 relative z-10">
     <div className="container px-6 h-full">
-      <div className="max-w-7xl h-full flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md p-8 border border-gray-200 bg-left bg-no-repeat bg-contain"
+      <div className="max-w-6xl h-full flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md p-8 border border-gray-200 bg-left bg-no-repeat bg-contain"
            style={{backgroundImage: `url(${Gift})`}}>
         
         {/* Left side - Text content */}
