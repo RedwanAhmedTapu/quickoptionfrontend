@@ -602,8 +602,7 @@ html[dir=rtl] .pwa-page .devices__item svg {
       <ul className="devices mr-0">
        <li className="devices__item">
         <a
-         href="https://pomain.onelink.me/PuH1?af_js_web=true&amp;af_ss_ver=2_9_3&amp;pid=web_to_app&amp;from_alanbase=0&amp;web2app=web2app&amp;afsite_id=web2app&amp;af_ss_ui=true"
-         target="_blank"
+         href="#"
          className="devices__btn devices__btn_ios js-android-link js-google-play-main-app"
          data-name="svg-link"
          data-layout='{"event":"gtm_events","ga4_event_name":"go_to_store_from_main","store_name":"android"}'
@@ -644,8 +643,7 @@ html[dir=rtl] .pwa-page .devices__item svg {
        </li>
        <li className="devices__item">
         <a
-         href="https://poa.onelink.me/RCtj?af_js_web=true&amp;af_ss_ver=2_9_3&amp;pid=web_to_app&amp;c=apk&amp;from_alanbase=0&amp;web2app=web2app&amp;afsite_id=web2app&amp;af_ss_ui=true"
-         target="_blank"
+        href="#"
          className="devices__btn devices__btn_ios js-apk-link js-apk-main-app"
          data-name="svg-link"
          data-layout='{"event":"gtm_events","ga4_event_name":"go_to_store_from_main","store_name":"apk"}'
@@ -672,7 +670,7 @@ html[dir=rtl] .pwa-page .devices__item svg {
        </li>
 
        <li className="devices__item">
-        <a href="https://m.pocketoption.com/en/cabinet/try-demo/" target="_blank" className="devices__btn devices__btn_ios js-web-link" data-name="svg-link" data-layout="{&quot;event&quot;:&quot;gtm_events&quot;,&quot;ga4_event_name&quot;:&quot;go_to_store_from_main&quot;,&quot;store_name&quot;:&quot;web&quot;}">
+        <a href="#" target="_blank" className="devices__btn devices__btn_ios js-web-link" data-name="svg-link" data-layout="{&quot;event&quot;:&quot;gtm_events&quot;,&quot;ga4_event_name&quot;:&quot;go_to_store_from_main&quot;,&quot;store_name&quot;:&quot;web&quot;}">
          <div className="devices__top">
           <svg className="svg-icon web" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1814 61.5384H30.8183C17.4508 61.5384 10.767 61.5384 6.61419 57.3856C2.46143 53.2329 2.46143 46.5489 2.46143 33.1814V30.8183C2.46143 17.4506 2.46142 10.7668 6.61419 6.61408C10.767 2.46155 17.4508 2.46155 30.8183 2.46155H33.1814C46.5489 2.46155 53.2328 2.46155 57.3854 6.61408C61.5383 10.7668 61.5383 17.4506 61.5383 30.8183V33.1814C61.5383 46.5489 61.5383 53.2329 57.3854 57.3856C53.2328 61.5384 46.5489 61.5384 33.1814 61.5384ZM32.9846 56.6152H31.0154C19.8758 56.6152 14.3059 56.6152 10.8453 53.8467C7.38464 51.0782 7.38464 46.6222 7.38464 37.7106L7.38454 22.1521C7.3845 19.4331 9.58729 17.2307 12.3062 17.2307L51.6932 17.2307C54.4121 17.2307 56.6153 19.4331 56.6153 22.152V37.7106C56.6153 46.6222 56.6153 51.0782 53.1546 53.8467C49.6941 56.6152 44.1242 56.6152 32.9846 56.6152ZM27.0768 9.84615C28.4355 9.84615 29.5383 10.9489 29.5383 12.3077C29.5383 13.6665 28.4355 14.7692 27.0768 14.7692C25.718 14.7692 24.6152 13.6665 24.6152 12.3077C24.6152 10.9489 25.718 9.84615 27.0768 9.84615ZM22.1537 12.3077C22.1537 10.949 21.0509 9.8462 19.6922 9.8462C18.3334 9.8462 17.2306 10.949 17.2306 12.3077C17.2306 13.6665 18.3334 14.7693 19.6922 14.7693C21.0509 14.7693 22.1537 13.6665 22.1537 12.3077ZM14.7691 12.3078C14.7691 10.949 13.6663 9.84621 12.3076 9.84621C10.9488 9.84621 9.84603 10.949 9.84603 12.3078C9.84603 13.6665 10.9488 14.7693 12.3076 14.7693C13.6663 14.7693 14.7691 13.6665 14.7691 12.3078Z" fill="currentColor"></path>
@@ -691,7 +689,7 @@ html[dir=rtl] .pwa-page .devices__item svg {
        </li>
 
        <li className="devices__item">
-        <a href="https://m.pocketoption.com/cabinet/telegram/link" target="_blank" className="devices__btn devices__btn_ios js-tg-link" data-name="svg-link" data-layout="{&quot;event&quot;:&quot;gtm_events&quot;,&quot;ga4_event_name&quot;:&quot;go_to_store_from_main&quot;,&quot;store_name&quot;:&quot;telegram&quot;}">
+        <a href="#" target="_blank" className="devices__btn devices__btn_ios js-tg-link" data-name="svg-link" data-layout="{&quot;event&quot;:&quot;gtm_events&quot;,&quot;ga4_event_name&quot;:&quot;go_to_store_from_main&quot;,&quot;store_name&quot;:&quot;telegram&quot;}">
          <div className="devices__top">
           <svg className="svg-icon tg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.5383 31.9986C61.5383 48.3122 48.3135 61.537 31.9998 61.537C15.6862 61.537 2.46143 48.3122 2.46143 31.9986C2.46143 15.685 15.6862 2.46021 31.9998 2.46021C48.3135 2.46021 61.5383 15.685 61.5383 31.9986ZM33.0584 24.2668C30.1853 25.4618 24.4433 27.9351 15.8322 31.6868C14.4339 32.2429 13.7014 32.7868 13.6347 33.3187C13.5221 34.2177 14.6478 34.5717 16.1807 35.0537C16.3892 35.1193 16.6053 35.1872 16.8268 35.2592C18.335 35.7494 20.3637 36.323 21.4184 36.3458C22.3751 36.3664 23.4429 35.972 24.6217 35.1625C32.6673 29.7316 36.8205 26.9865 37.0812 26.9273C37.2652 26.8855 37.5201 26.833 37.6928 26.9866C37.8655 27.1401 37.8485 27.4308 37.8302 27.5088C37.7187 27.9842 33.2998 32.0924 31.0131 34.2184C30.3002 34.8811 29.7945 35.3513 29.6911 35.4586C29.4595 35.6992 29.2235 35.9267 28.9967 36.1453C27.5956 37.496 26.5449 38.5089 29.0549 40.163C30.2611 40.9579 31.2263 41.6152 32.1893 42.271C33.2409 42.9871 34.2898 43.7014 35.6469 44.591C35.9926 44.8177 36.3229 45.0531 36.6445 45.2824C37.8683 46.1548 38.9678 46.9387 40.3262 46.8137C41.1155 46.7411 41.9308 45.9989 42.3449 43.7853C43.3234 38.554 45.2469 27.2194 45.6914 22.5487C45.7304 22.1395 45.6814 21.6158 45.642 21.3859C45.6027 21.156 45.5205 20.8284 45.2216 20.586C44.8677 20.2988 44.3214 20.2382 44.077 20.2425C42.966 20.2621 41.2615 20.8548 33.0584 24.2668Z" fill="currentColor"></path>

@@ -4,8 +4,6 @@ import TradingStats from "../components/TradingStats";
 import WhyChooseSection from "../components/WhyChoosenSection";
 import OffersSlider from "../components/OffersSlider";
 import EmailSection from "../components/EmailSection";
-import PlatformsSection from "../components/PlatformSection";
-import ReviewsSection from "../components/ReviewsSection";
 import PaymentMethods from "../components/PaymentMethods";
 import WebApps from "../components/WebApps";
 import IMFS from "../components/IMFS";
@@ -19,8 +17,6 @@ const HomePage = () => {
       <WhyChooseSection />
       <OffersSlider />
       <EmailSection />
-      <PlatformsSection />
-      <ReviewsSection />
       <PaymentMethods />
      
       <WebApps />
