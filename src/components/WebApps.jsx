@@ -583,7 +583,7 @@ html[dir=rtl] .pwa-page .devices__item svg {
 `}</style>
       <section className="section section_light applications">
         <div className="webapps-container">
-          <h2 className="text-[46px] font-semibold w-2xl -mb-20">Web application for any device</h2>
+          <h2 className="text-[46px] font-semibold w-lg -mb-32">Web application for any device</h2>
           <div className="webapps-content applications__in flex gap-[120px] justify-between items-center">
             {/* <ul className="devices">
               <li className="devices__item">
@@ -684,8 +684,8 @@ html[dir=rtl] .pwa-page .devices__item svg {
             </div>
 
             <div className="phone-container flex">
-              <img alt="Iphone" className=" ls-is-cached lazyloaded phone_iphone animated fadeInUpPhone -mr-10 mt-3" style={{ visibility: "visible", animationDelay: "0s" }} src="../../public/images/iphone-img.avif" />
-              <img alt="Android" className=" ls-is-cached lazyloaded phone_android animated fadeInUpPhone mb-3" src="../../public/images/android-img.avif" />
+              <img alt="Iphone" className=" ls-is-cached lazyloaded phone_iphone animated fadeInUpPhone -mr-28 mt-12" style={{ visibility: "visible", animationDelay: "0s" }} src="../../public/images/iphone-img.avif" />
+              <img alt="Android" className=" ls-is-cached lazyloaded phone_android animated fadeInUpPhone mb-12" src="../../public/images/android-img.avif" />
             </div>
           </div>
         </div>
