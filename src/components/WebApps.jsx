@@ -597,9 +597,9 @@ html[dir=rtl] .pwa-page .devices__item svg {
 `}</style>
    <section className="section section_light applications">
     <div className="webapps-container">
-     <div className="webapps-content applications__in">
-      <h2>Web application for any device</h2>
-      <ul className="devices">
+      <h2 className="text-[46px] font-semibold mb-10">Web application for any device</h2>
+     <div className="webapps-content applications__in flex items-start justify-evenly">
+      <ul className="devices mr-0">
        <li className="devices__item">
         <a
          href="https://pomain.onelink.me/PuH1?af_js_web=true&amp;af_ss_ver=2_9_3&amp;pid=web_to_app&amp;from_alanbase=0&amp;web2app=web2app&amp;afsite_id=web2app&amp;af_ss_ui=true"
@@ -642,7 +642,6 @@ html[dir=rtl] .pwa-page .devices__item svg {
          <div className="devices__link">Download</div>
         </a>
        </li>
-
        <li className="devices__item">
         <a
          href="https://poa.onelink.me/RCtj?af_js_web=true&amp;af_ss_ver=2_9_3&amp;pid=web_to_app&amp;c=apk&amp;from_alanbase=0&amp;web2app=web2app&amp;afsite_id=web2app&amp;af_ss_ui=true"
@@ -672,67 +671,44 @@ html[dir=rtl] .pwa-page .devices__item svg {
         </a>
        </li>
 
+       <li className="devices__item">
+        <a href="https://m.pocketoption.com/en/cabinet/try-demo/" target="_blank" className="devices__btn devices__btn_ios js-web-link" data-name="svg-link" data-layout="{&quot;event&quot;:&quot;gtm_events&quot;,&quot;ga4_event_name&quot;:&quot;go_to_store_from_main&quot;,&quot;store_name&quot;:&quot;web&quot;}">
+         <div className="devices__top">
+          <svg className="svg-icon web" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1814 61.5384H30.8183C17.4508 61.5384 10.767 61.5384 6.61419 57.3856C2.46143 53.2329 2.46143 46.5489 2.46143 33.1814V30.8183C2.46143 17.4506 2.46142 10.7668 6.61419 6.61408C10.767 2.46155 17.4508 2.46155 30.8183 2.46155H33.1814C46.5489 2.46155 53.2328 2.46155 57.3854 6.61408C61.5383 10.7668 61.5383 17.4506 61.5383 30.8183V33.1814C61.5383 46.5489 61.5383 53.2329 57.3854 57.3856C53.2328 61.5384 46.5489 61.5384 33.1814 61.5384ZM32.9846 56.6152H31.0154C19.8758 56.6152 14.3059 56.6152 10.8453 53.8467C7.38464 51.0782 7.38464 46.6222 7.38464 37.7106L7.38454 22.1521C7.3845 19.4331 9.58729 17.2307 12.3062 17.2307L51.6932 17.2307C54.4121 17.2307 56.6153 19.4331 56.6153 22.152V37.7106C56.6153 46.6222 56.6153 51.0782 53.1546 53.8467C49.6941 56.6152 44.1242 56.6152 32.9846 56.6152ZM27.0768 9.84615C28.4355 9.84615 29.5383 10.9489 29.5383 12.3077C29.5383 13.6665 28.4355 14.7692 27.0768 14.7692C25.718 14.7692 24.6152 13.6665 24.6152 12.3077C24.6152 10.9489 25.718 9.84615 27.0768 9.84615ZM22.1537 12.3077C22.1537 10.949 21.0509 9.8462 19.6922 9.8462C18.3334 9.8462 17.2306 10.949 17.2306 12.3077C17.2306 13.6665 18.3334 14.7693 19.6922 14.7693C21.0509 14.7693 22.1537 13.6665 22.1537 12.3077ZM14.7691 12.3078C14.7691 10.949 13.6663 9.84621 12.3076 9.84621C10.9488 9.84621 9.84603 10.949 9.84603 12.3078C9.84603 13.6665 10.9488 14.7693 12.3076 14.7693C13.6663 14.7693 14.7691 13.6665 14.7691 12.3078Z" fill="currentColor"></path>
+           <path d="M19.5029 30.1064C19.5029 29.479 20.0116 28.9703 20.639 28.9703C21.2665 28.9703 21.7751 29.479 21.7751 30.1064V48.2839C21.7751 48.9114 21.2665 49.42 20.639 49.42C20.0116 49.42 19.5029 48.9114 19.5029 48.2839V30.1064Z" fill="currentColor"></path>
+           <path d="M30.8638 23.2899C30.8638 22.6625 31.3724 22.1538 31.9999 22.1538C32.6273 22.1538 33.136 22.6625 33.136 23.2899V46.0118C33.136 46.6392 32.6273 47.1479 31.9999 47.1479C31.3724 47.1479 30.8638 46.6392 30.8638 46.0118V23.2899Z" fill="currentColor"></path>
+           <path d="M42.2249 32.3787C42.2249 31.7513 42.7335 31.2426 43.3609 31.2426C43.9884 31.2426 44.497 31.7513 44.497 32.3787V50.5562C44.497 51.1836 43.9884 51.6923 43.3609 51.6923C42.7335 51.6923 42.2249 51.1836 42.2249 50.5562V32.3787Z" fill="currentColor"></path>
+           <path d="M17.2307 34.7454C17.2307 34.0657 17.7817 33.5146 18.4615 33.5146H22.8165C23.4962 33.5146 24.0473 34.0657 24.0473 34.7454V45.917C24.0473 46.5967 23.4962 47.1478 22.8165 47.1478H18.4615C17.7817 47.1478 17.2307 46.5967 17.2307 45.917V34.7454Z" fill="currentColor"></path>
+           <path d="M28.5916 27.9289C28.5916 27.2492 29.1426 26.6981 29.8223 26.6981H34.1773C34.8571 26.6981 35.4081 27.2492 35.4081 27.9289V43.6448C35.4081 44.3246 34.8571 44.8756 34.1773 44.8756H29.8223C29.1426 44.8756 28.5916 44.3246 28.5916 43.6448V27.9289Z" fill="currentColor"></path>
+           <path d="M39.9526 37.0177C39.9526 36.338 40.5037 35.7869 41.1834 35.7869H45.5384C46.2182 35.7869 46.7692 36.338 46.7692 37.0177V48.1893C46.7692 48.869 46.2182 49.42 45.5384 49.42H41.1834C40.5037 49.42 39.9526 48.869 39.9526 48.1893V37.0177Z" fill="currentColor"></path>
+          </svg>
+          <p className="devices__title">
+           Web App                                        </p>
+         </div>
+         <div className="devices__link">Open</div>
+        </a>
+       </li>
+
+       <li className="devices__item">
+        <a href="https://m.pocketoption.com/cabinet/telegram/link" target="_blank" className="devices__btn devices__btn_ios js-tg-link" data-name="svg-link" data-layout="{&quot;event&quot;:&quot;gtm_events&quot;,&quot;ga4_event_name&quot;:&quot;go_to_store_from_main&quot;,&quot;store_name&quot;:&quot;telegram&quot;}">
+         <div className="devices__top">
+          <svg className="svg-icon tg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path fill-rule="evenodd" clip-rule="evenodd" d="M61.5383 31.9986C61.5383 48.3122 48.3135 61.537 31.9998 61.537C15.6862 61.537 2.46143 48.3122 2.46143 31.9986C2.46143 15.685 15.6862 2.46021 31.9998 2.46021C48.3135 2.46021 61.5383 15.685 61.5383 31.9986ZM33.0584 24.2668C30.1853 25.4618 24.4433 27.9351 15.8322 31.6868C14.4339 32.2429 13.7014 32.7868 13.6347 33.3187C13.5221 34.2177 14.6478 34.5717 16.1807 35.0537C16.3892 35.1193 16.6053 35.1872 16.8268 35.2592C18.335 35.7494 20.3637 36.323 21.4184 36.3458C22.3751 36.3664 23.4429 35.972 24.6217 35.1625C32.6673 29.7316 36.8205 26.9865 37.0812 26.9273C37.2652 26.8855 37.5201 26.833 37.6928 26.9866C37.8655 27.1401 37.8485 27.4308 37.8302 27.5088C37.7187 27.9842 33.2998 32.0924 31.0131 34.2184C30.3002 34.8811 29.7945 35.3513 29.6911 35.4586C29.4595 35.6992 29.2235 35.9267 28.9967 36.1453C27.5956 37.496 26.5449 38.5089 29.0549 40.163C30.2611 40.9579 31.2263 41.6152 32.1893 42.271C33.2409 42.9871 34.2898 43.7014 35.6469 44.591C35.9926 44.8177 36.3229 45.0531 36.6445 45.2824C37.8683 46.1548 38.9678 46.9387 40.3262 46.8137C41.1155 46.7411 41.9308 45.9989 42.3449 43.7853C43.3234 38.554 45.2469 27.2194 45.6914 22.5487C45.7304 22.1395 45.6814 21.6158 45.642 21.3859C45.6027 21.156 45.5205 20.8284 45.2216 20.586C44.8677 20.2988 44.3214 20.2382 44.077 20.2425C42.966 20.2621 41.2615 20.8548 33.0584 24.2668Z" fill="currentColor"></path>
+          </svg>
+          <p className="devices__title">
+           Telegram bot                                        </p>
+         </div>
+         <div className="devices__link">Subscribe</div>
+        </a>
+       </li>
+
        {/* Repeat for Web App and Telegram sections as above (unchanged except className/style fix) */}
       </ul>
 
-      <div className="phone-container">
-       <picture
-        className="phone phone_android animated fadeInUpPhone"
-        style={{ visibility: "visible", animationDelay: "0.3s" }}
-       >
-        <source
-         data-srcset="/themes/2017-09/img/apps/android-img.avif"
-         type="image/avif"
-         srcSet="/themes/2017-09/img/apps/android-img.avif"
-        />
-        <source
-         data-srcset="/themes/2017-09/img/apps/android-img.webp 1x, /themes/2017-09/img/apps/android-img@2x.webp 2x"
-         type="image/webp"
-         srcSet="/themes/2017-09/img/apps/android-img.webp 1x, /themes/2017-09/img/apps/android-img@2x.webp 2x"
-        />
-        <source
-         data-srcset="/themes/2017-09/img/apps/android-img.png 1x, /themes/2017-09/img/apps/android-img@2x.png 2x"
-         type="image/png"
-         srcSet="/themes/2017-09/img/apps/android-img.png 1x, /themes/2017-09/img/apps/android-img@2x.png 2x"
-        />
-        <img
-         data-src="/themes/2017-09/img/apps/android-img.png?v=1"
-         data-srcset="/themes/2017-09/img/apps/android-img.png?v=1 1x, /themes/2017-09/img/apps/android-img@2x.png?v=1 2x"
-         alt="Android"
-         className="lazyloaded"
-         srcSet="/themes/2017-09/img/apps/android-img.png?v=1 1x, /themes/2017-09/img/apps/android-img@2x.png?v=1 2x"
-         src="/themes/2017-09/img/apps/android-img.png?v=1"
-        />
-       </picture>
-
-       <picture
-        className="phone phone_iphone animated fadeInUpPhone"
-        style={{ visibility: "visible", animationDelay: "0s" }}
-       >
-        <source
-         data-srcset="/themes/2017-09/img/apps/iphone-img.avif"
-         type="image/avif"
-         srcSet="/themes/2017-09/img/apps/iphone-img.avif"
-        />
-        <source
-         data-srcset="/themes/2017-09/img/apps/iphone-img.webp?v=1 1x, /themes/2017-09/img/apps/iphone-img@2x.webp?v=1 2x"
-         type="image/webp"
-         srcSet="/themes/2017-09/img/apps/iphone-img.webp?v=1 1x, /themes/2017-09/img/apps/iphone-img@2x.webp?v=1 2x"
-        />
-        <source
-         data-srcset="/themes/2017-09/img/apps/iphone-img.png?v=1 1x, /themes/2017-09/img/apps/iphone-img@2x.png?v=1 2x"
-         type="image/png"
-         srcSet="/themes/2017-09/img/apps/iphone-img.png?v=1 1x, /themes/2017-09/img/apps/iphone-img@2x.png?v=1 2x"
-        />
-        <img
-         data-src="/themes/2017-09/img/apps/iphone-img.png?v=1"
-         data-srcset="/themes/2017-09/img/apps/iphone-img.png?v=1 1x, /themes/2017-09/img/apps/iphone-img@2x.png?v=1 2x"
-         alt="Iphone"
-         className="lazyloaded"
-         srcSet="/themes/2017-09/img/apps/iphone-img.png?v=1 1x, /themes/2017-09/img/apps/iphone-img@2x.png?v=1 2x"
-         src="/themes/2017-09/img/apps/iphone-img.png?v=1"
-        />
-       </picture>
+      <div className="phone-container flex">
+       <img alt="Iphone" className=" ls-is-cached lazyloaded phone_iphone animated fadeInUpPhone" style={{ visibility: "visible", animationDelay: "0s" }} src="../../public/images/iphone-img.avif" />
+       <img alt="Android" className=" ls-is-cached lazyloaded phone_android animated fadeInUpPhone" src="../../public/images/android-img.avif" />
       </div>
      </div>
     </div>
@@ -742,3 +718,5 @@ html[dir=rtl] .pwa-page .devices__item svg {
 };
 
 export default WebApps;
+
+
