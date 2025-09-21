@@ -2,7 +2,7 @@ import React from 'react';
 
 const CoreValues = () => {
   return (
-    <div>
+    <div className='p-14'>
       <section className="section core-values">
         <div className="container container__no-padding">
           <div className="content">

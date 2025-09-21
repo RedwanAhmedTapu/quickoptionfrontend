@@ -92,7 +92,7 @@ const Socials = () => {
 
               {/* Discord */}
               <div
-                className="social-link__item animated fadeInDown"
+                className="social-link__item animated "
                 style={{ visibility: "visible", animationDelay: "1.2s" }}
               >
                 <a
