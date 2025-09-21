@@ -190,6 +190,7 @@ const JoinUs = () => {
             </p>
             <a
               href="#"
+              onClick={e=>e.preventDefault()}
               className="join-us__btn btn btn_white"
             >
               Try demo in one click
