@@ -19,6 +19,8 @@ import Header from "./components/Header";
 import TradingStats from "./components/TradingStats";
 import TradingSidebar from "./components/TradingSidebar";
 import IMFS from "./components/IMFS";
+import TopSection from "./components/about us/TopSection";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -64,6 +66,7 @@ const App = () => {
         <TradingSidebar />
         <IMFS />
         <RiskDisclosure />
+        <AboutUs />
       </main>
 
       <Footer />

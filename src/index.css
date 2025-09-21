@@ -19,3 +19,245 @@ body {
 .baseocean{
  background: #2193b0;
 }
+
+/* about us page */
+.ar-lang .page,
+.fa-lang .page {
+ line-height: 1.6
+}
+
+.ar-lang .page .top-section .bg,
+.fa-lang .page .top-section .bg {
+ left: unset;
+ right: 0
+}
+
+.ar-lang .page .top-section .bg__item_1,
+.fa-lang .page .top-section .bg__item_1 {
+ left: unset;
+ right: 19.5rem;
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1)
+}
+
+@media screen and (max-width:1279px) {
+ .ar-lang .page .top-section .bg__item_1,
+ .fa-lang .page .top-section .bg__item_1 {
+  left: -53rem;
+  right: unset
+ }
+}
+
+
+.page .top-section {
+ background: #02274b;
+ background: linear-gradient(135deg, #02274b, #02274b 5%, #012d5a);
+ overflow: hidden;
+ padding-top: 4.375rem;
+ position: relative
+}
+
+.page .top-section:after {
+ background: linear-gradient(135deg, #01203f, rgba(2, 29, 75, 0));
+ bottom: 0;
+ content: "";
+ display: block;
+ left: 0;
+ position: absolute;
+ right: 0;
+ top: 0;
+ z-index: 2
+}
+
+.page .top-section__title {
+ font-size: 3.125rem;
+ letter-spacing: 2px;
+ margin-bottom: 2rem;
+ text-transform: uppercase
+}
+
+.page .top-section__title span {
+ display: block
+}
+
+@media screen and (max-width:1000px) {
+ .page .top-section__title {
+  font-size: 2.3rem;
+  line-height: 2.9rem;
+  margin-bottom: 1.5rem
+ }
+}
+
+@media screen and (max-width:700px) {
+ .page .top-section__title {
+  font-size: 2rem;
+  line-height: 2.5rem
+ }
+}
+
+@media screen and (max-width:550px) {
+ .page .top-section__title {
+  font-size: 1.65rem;
+  line-height: 2rem
+ }
+}
+
+.page .top-section__desc {
+ margin-bottom: 2.1rem
+}
+
+@media screen and (max-width:1000px) {
+ .page .top-section__desc {
+  margin-bottom: 2rem
+ }
+}
+
+.page .top-section__container {
+ padding-top: 3.2rem;
+ position: relative
+}
+
+.has-pwa-banner .page .top-section__container {
+ padding-top: 100px
+}
+
+@media only screen and (max-width:1000px) {
+ .page .top-section__container {
+  padding-top: 2.5rem
+ }
+}
+
+@media only screen and (max-width:700px) {
+ .page .top-section__container {
+  padding-top: 1.5rem
+ }
+}
+
+@media only screen and (max-width:550px) {
+ .page .top-section__container {
+  padding-top: .5rem
+ }
+}
+
+.page .top-section .register-btn {
+ padding-left: 90px;
+ padding-right: 90px
+}
+
+.page .top-section__btn-container2 {
+ display: -webkit-box;
+ display: flex;
+ margin-top: 15px
+}
+
+.page .top-section__btn-container2 a {
+ border-bottom: 1px solid #0099fa;
+ color: #fff;
+ text-decoration: none;
+ -webkit-transition: border-color .3s;
+ transition: border-color .3s
+}
+
+.page .top-section__btn-container2 a:hover {
+ border-bottom: 1px solid rgba(0, 153, 250, 0)
+}
+
+.page .top-section__btn-container2 .dvdr {
+ margin-left: 10px;
+ margin-right: 10px
+}
+
+@media screen and (max-width:768px) {
+
+ .page .top-section__btn-container2 .dvdr,
+ .page .top-section__btn-container2 a:first-child {
+  display: none
+ }
+}
+
+.page .top-section__content {
+ position: relative;
+ z-index: 3
+}
+
+.page .top-section .bg {
+ bottom: 0;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: calc(100% - 18.75rem);
+ z-index: 2
+}
+
+.page .top-section .bg__item {
+ position: absolute;
+ top: 50%
+}
+
+.page .top-section .bg__item_1 {
+ left: 19.5rem;
+ margin-top: -19rem
+}
+
+@media screen and (max-width:1279px) {
+ .page .top-section .bg__item_1 {
+  left: unset;
+  right: -53rem
+ }
+}
+
+.page .top-section_no-img {
+ background: linear-gradient(135deg, #02274b, #0f487c)
+}
+
+.page .top-section_no-img:after {
+ display: none !important
+}
+
+.page .row {
+ max-width: 82rem
+}
+
+
+.page .text-section {
+ background: #fff;
+ color: #3a4a68
+}
+
+.page .text-section__container {
+ padding-top: 3.75rem
+}
+
+.page .text-section__container p {
+ margin-bottom: 1.8rem
+}
+
+@media screen and (max-width:700px) {
+ .page .text-section__container p {
+  margin-bottom: 1.3rem
+ }
+
+ .page .text-section__container {
+  padding-top: 2.75rem
+ }
+}
+
+@media screen and (max-width:500px) {
+ .page {
+  font-size: .95rem;
+  line-height: 1.45rem
+ }
+}
+
+.pwa-page .page .top-section {
+ background: var(--bg-color)
+}
+
+.pwa-page .page .top-section:after {
+ display: none
+}
+
+.pwa-page .page .top-section__container {
+ padding-bottom: 0
+}
+
