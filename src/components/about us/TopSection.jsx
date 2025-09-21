@@ -485,10 +485,12 @@ const TopSection = () => {
    <section className="about-us-top-section top-section">
     <div className="about-us-top-container about-us-top-top-section__container">
      <div className="top-section__bg bg">
-      <img src="https://m.pocketoption.com/themes/2017-09/img/pages/about/about-bg.png" alt="" className="bg__item bg__item_1" />
+      {/* <img src="https://m.pocketoption.com/themes/2017-09/pages/about/about-bg.png" alt="" className="bg__item bg__item_1" /> */}
+      <img src="../../../public/images/team-meeting.webp" alt="" className="bg__item bg__item_1" />
       <div className="bg__item bg__item_gradient"></div>
      </div>
-     <div className="about-us-top-content top-section__content">
+     <div className="about-us-top-r
+     content top-section__content">
       <div className="breadcrumbs-wrap">
        <ul className="breadcrumbs">
         <li className="breadcrumbs__item">

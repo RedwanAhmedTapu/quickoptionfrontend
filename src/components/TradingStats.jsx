@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Monitor from "../assets/imgs/monitor@2x.webp";
+// import Monitor from "../../public/images/modern-monitor-elegant-table.png";
+import Monitor from "../../public/images/modern-monitor-elegant-table.png";
 
 const TradingStats = () => {
   const [animatedValues, setAnimatedValues] = useState({
@@ -152,11 +153,11 @@ const TradingStats = () => {
         </div>
 
         {/* Right Content - 60% */}
-        <div className="w-full md:w-3/5 flex justify-center mt-12 md:mt-24">
+        <div className="w-full md:w-3/5 flex justify-center mt-12 md:mt-24 overflow-hidden">
           <img
             src={Monitor}
             alt="Trading Monitor"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain scale-150"
           />
         </div>
       </div>
