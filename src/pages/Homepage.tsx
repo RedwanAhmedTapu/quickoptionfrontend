@@ -17,7 +17,6 @@ const HomePage = () => {
       <WhyChooseSection />
       <OffersSlider />
       <EmailSection />
-      <PaymentMethods />
      
       <WebApps />
       <IMFS />
