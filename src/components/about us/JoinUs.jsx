@@ -190,6 +190,7 @@ const JoinUs = () => {
               minds in business to imagine and invent the future.
             </p>
             <a
+              onClick={e=>e.preventDefault()}
               href="https://m.pocketoption.com/en/cabinet/try-demo/"
               className="join-us__btn btn btn_white"
             >

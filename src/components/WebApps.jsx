@@ -707,8 +707,8 @@ html[dir=rtl] .pwa-page .devices__item svg {
       </ul>
 
       <div className="phone-container flex">
-       <img alt="Iphone" className=" ls-is-cached lazyloaded phone_iphone animated fadeInUpPhone" style={{ visibility: "visible", animationDelay: "0s" }} src="../../public/images/iphone-img.avif" />
-       <img alt="Android" className=" ls-is-cached lazyloaded phone_android animated fadeInUpPhone" src="../../public/images/android-img.avif" />
+       <img alt="Iphone" className=" ls-is-cached lazyloaded phone_iphone animated fadeInUpPhone -mr-10 mt-3" style={{ visibility: "visible", animationDelay: "0s" }} src="../../public/images/iphone-img.avif" />
+       <img alt="Android" className=" ls-is-cached lazyloaded phone_android animated fadeInUpPhone mb-3" src="../../public/images/android-img.avif" />
       </div>
      </div>
     </div>
