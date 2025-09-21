@@ -61,9 +61,9 @@ const App = () => {
         <PlatformsSection />
         <ReviewsSection />
         <PaymentMethods />
-        <RiskDisclosure />
         <TradingSidebar />
         <IMFS />
+        <RiskDisclosure />
       </main>
 
       <Footer />
