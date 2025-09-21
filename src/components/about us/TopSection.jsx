@@ -42,8 +42,7 @@ const TopSection = () => {
 }
 
 .page .top-section {
- background: #02274b;
- background: linear-gradient(135deg, #02274b, #02274b 5%, #012d5a);
+ background: linear-gradient(180deg, #2193b0, #6dd5ed 50%, #2193b0);
  overflow: hidden;
  padding-top: 4.375rem;
  position: relative

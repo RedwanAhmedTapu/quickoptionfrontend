@@ -21,8 +21,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "0.2s" }}
               >
                 <a
-                  href="https://www.facebook.com/pocketbrokerglobal"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_fb"
                 >
@@ -36,8 +36,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "0.4s" }}
               >
                 <a
-                  href="https://t.me/pocketoptioncom"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_tg"
                 >
@@ -51,8 +51,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "0.6s" }}
               >
                 <a
-                  href="https://www.instagram.com/pocketoption_com/"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_ig"
                 >
@@ -66,8 +66,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "0.8s" }}
               >
                 <a
-                  href="https://twitter.com/pocket_option"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_tw"
                 >
@@ -81,8 +81,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "1s" }}
               >
                 <a
-                  href="https://www.youtube.com/c/PocketOption"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_yt"
                 >
@@ -96,8 +96,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "1.2s" }}
               >
                 <a
-                  href="https://discord.gg/pocketoption"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_dc"
                 >
@@ -111,8 +111,8 @@ const Socials = () => {
                 style={{ visibility: "visible", animationDelay: "1.4s" }}
               >
                 <a
-                  href="https://www.tiktok.com/@pocketoption"
-                  target="_blank"
+                  href="#"
+                
                   rel="noopener noreferrer"
                   className="social-link__in social-link__in_tt"
                 >

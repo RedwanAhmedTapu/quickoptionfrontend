@@ -28,7 +28,7 @@ const Documents = () => {
                       className="list__link"
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://m.pocketoption.com/en/public-offer/"
+                      href="#"
                     >
                       Terms and Conditions
                     </a>
@@ -39,7 +39,7 @@ const Documents = () => {
                   >
                     <a
                       className="list__link"
-                      href="https://m.pocketoption.com/en/responsibility-disclosure/"
+                      href="#"
                     >
                       Information disclosure
                     </a>
@@ -50,7 +50,7 @@ const Documents = () => {
                   >
                     <a
                       className="list__link"
-                      href="https://m.pocketoption.com/en/privacy-policy/"
+                      href="#"
                     >
                       Privacy policy
                     </a>
@@ -61,7 +61,7 @@ const Documents = () => {
                   >
                     <a
                       className="list__link"
-                      href="https://m.pocketoption.com/en/aml-policy/"
+                      href="#"
                     >
                       AML and KYC policy
                     </a>
@@ -72,7 +72,7 @@ const Documents = () => {
                   >
                     <a
                       className="list__link"
-                      href="https://m.pocketoption.com/en/payment-policy/"
+                      href="#"
                     >
                       Payment policy
                     </a>

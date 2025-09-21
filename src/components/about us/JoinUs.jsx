@@ -44,8 +44,7 @@ const JoinUs = () => {
 }
  
 .page--about-us .join-us {
- background: -webkit-gradient(linear, left top, left bottom, from(#00498c), to(#0089e0));
- background: linear-gradient(180deg, #00498c, #0089e0);
+ background: linear-gradient(180deg, #2193b0, #6dd5ed 50%, #2193b0);
  overflow: hidden;
  position: relative;
  text-align: center
@@ -190,7 +189,7 @@ const JoinUs = () => {
               minds in business to imagine and invent the future.
             </p>
             <a
-              href="https://m.pocketoption.com/en/cabinet/try-demo/"
+              href="#"
               className="join-us__btn btn btn_white"
             >
               Try demo in one click

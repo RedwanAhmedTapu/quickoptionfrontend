@@ -140,7 +140,6 @@ const PocketOptionLanding = () => {
   );
 
   
-
  
  
 

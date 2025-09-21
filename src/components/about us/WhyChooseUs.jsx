@@ -167,7 +167,7 @@ const WhyChooseUs = () => {
 
 
     `}</style>
-      <section className="why_section why_section_light why">
+      <section className="why_section why_section_light why max-w-6xl">
         <div className="why-choose-us_container why-choose-us_container_small-padding why__container">
           <div className="content why__content">
             <div className="why__left">
