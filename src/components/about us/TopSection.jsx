@@ -436,6 +436,8 @@ const TopSection = () => {
  font-size: 3.125rem;
  letter-spacing: 2px;
  margin-bottom: 2rem;
+ color: white;
+ font-weight: bold;
  text-transform: uppercase
 }
 
@@ -468,6 +470,17 @@ const TopSection = () => {
 .page--about-us .top-section__title span {
  display: inline-block
 }
+
+.page .top-section__desc {
+ margin-bottom: 2.1rem;
+ color: white;
+}
+
+@media screen and (max-width:1000px) {
+ .page .top-section__desc {
+ color: white;
+  margin-bottom: 2rem;
+ }
 
   `}</style>
    <section className="about-us-top-section top-section">
