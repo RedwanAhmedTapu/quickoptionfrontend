@@ -18,10 +18,11 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TradingStats from "./components/TradingStats";
 import TradingSidebar from "./components/TradingSidebar";
+import IMFS from "./components/IMFS";
 
 const App = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const offers = [
@@ -61,7 +62,8 @@ const App = () => {
         <ReviewsSection />
         <PaymentMethods />
         <RiskDisclosure />
-        <TradingSidebar/>
+        <TradingSidebar />
+        <IMFS />
       </main>
 
       <Footer />
